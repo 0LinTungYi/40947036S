@@ -80,14 +80,26 @@ int main()
 			printf("Straight flush\n");
 			return 0;
 		}
+		else if(A[0][1]==1&&A[1][1]==10&&
+			A[2][1]==11&&A[3][1]==12&&A[4][1]==13)
+		{
+			printf("Straight flush\n");
+			return 0;
+		}
 		else 
 		{
 			printf("flush\n");	
 			return 0;
 		}
 	}
-	else if(A[0][1]==A[1][1]-1&&A[0][1]==A[2][1]-2&&
-		   A[0][1]==A[3][1]-3&&A[0][1]==A[4][1]-4)
+	else if(A[0][1]==1&&A[1][1]==10&&
+		A[2][1]==11&&A[3][1]==12&&A[4][1]==13)
+	{
+		printf("Straight\n");
+		return 0;
+	}
+	else if(A[0][1]==10&&A[0][1]==A[1][1]-1&&
+		A[0][1]==A[2][1]-2&&A[0][1]==A[3][1]-3&&A[4][1]==1)
 	{
 		printf("Straight\n");
 		return 0;
